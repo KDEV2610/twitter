@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+
+    body {
+        background-color: #999999;
+        overflow-y: hidden;
+    }
+
+    .container {
+        border: 1px solid black;
+        justify-content: center;
+        display: flex;
+        height: 100vh;
+        align-items: center;
+
+    }
+
+    a,
+    input {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .box {
+        background-color: #FFFFFF;
+        /* border: 1px solid red; */
+        border-radius: 5px;
+        width: 500px;
+        padding: 10px;
+
+    }
+
+    .logo {
+        display: block;
+        margin: auto;
+    }
+
+    .cross {
+        float: left;
+        padding: 5px;
+    }
+
+    .cross:hover {
+        /* scale: 2 ; */
+        background-color: #ebebeb;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .sign {
+        border: 1px solid #666565;
+        padding: 10px 0;
+        border-radius: 50px;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+    }
+
+
+    .social-icon img{
+        float: left;
+        margin-top: -30px;
+        margin-left: 18px;
+    }
+    hr {
+        display: inline-block;
+        width: 40%;
+    }
+
+    .hr-div {
+        text-align: center;
+
+    }
+
+    .text {
+        display: block;
+        width: 95%;
+        padding: 20px 0;
+        padding-left: 5%;
+        font-size: 17px;
+    }
+
+    .text:focus {
+        outline: 1px solid blue;
+    }
+
+    .inner-box {
+        padding: 20px 100px;
+        /* width: 60%; */
+        /* border: 1px solid black; */
+    }
+
+    #next-btn {
+        background-color: black;
+        color: white;
+    }
+
+    .forgot-pass {
+        border: 1px solid grey;
+        padding: 10px 0;
+        border-radius: 50px;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+    }
+
+    div .acc {
+        margin: 40px 0;
+        text-decoration: none;
+
+    }
+
+    .acc p a{
+        text-decoration: none;
+    }
+    .acc p a:hover{
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img class="cross" width="25" height="25" src="https://img.icons8.com/ios/50/multiply.png" alt="multiply" />
+
+            <img class="logo"
+                src="https://img.freepik.com/premium-vector/new-twitter-logo-x-2023-twitter-x-logo-vector-download_691560-10809.jpg?w=30 "
+                alt="">
+            <div class="inner-box">
+                <h1>Sign in to X</h1>
+
+                <div class="social-icon">
+                    <a class="sign" href="#">Sign in with Google</a>
+                    <img width="20" height="20" src="https://img.icons8.com/color/48/google-logo.png"
+                        alt="google-logo" />
+                </div>
+
+                <div class="social-icon">
+                <a class="sign" href="#">Sign in with Apple</a>
+                <img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/mac-os.png" alt="mac-os"/>
+                </div>
+
+                <div class="hr-div">
+                    <hr> or
+                    <hr>
+                </div>
+
+                <input class="text" placeholder="Phone, email, username" type="text">
+
+
+                <a class="sign" id="next-btn" href="#">Next</a>
+                <a class="forgot-pass" href="">Forgot Password?</a>
+
+                <div class="acc">
+                    <p>don't have an account? <a href="#">Sign in</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
